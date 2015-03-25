@@ -4,8 +4,12 @@
 		return {
 			restrict: 'E',
 			templateUrl: './js/templates/addEvent.html',
-			link: function (scope, element, attrs) {
+			scope: {
 
+			},
+			require:'^?addEventCtrl',
+			link: function (scope, element, attrs, controller) {
+				console.log(controller);
 			}
 		};
 	});

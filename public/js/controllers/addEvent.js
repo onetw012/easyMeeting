@@ -1,6 +1,8 @@
 ; (function(){
 	angular.module('meetings')
-	.controller('addEvent', ['$scope', function($scope){
-		$scope.event = {};
+	.controller('addEventCtrl', ['$scope', function($scope){
+		$scope.event = {
+			name: ""
+		};
 	}]);
 })();
