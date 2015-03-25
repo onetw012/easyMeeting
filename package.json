@@ -1,0 +1,25 @@
+{
+  "name": "easyMeeting",
+  "version": "1.0.0",
+  "description": "service, which provides meeting creation, allows user describe and invite other users",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "meeting"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3",
+    "mongoose": "^3.8.25",
+    "mongoose-relationship": "^0.1.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-connect": "^2.2.0",
+    "gulp-ruby-sass": "^1.0.1"
+  }
+}

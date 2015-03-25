@@ -1,0 +1,27 @@
+<div>
+	<form class="form-horizontal add-event">
+		<div class="form-group">
+			<label for="eventLatitude">Latitude</label>
+			<input type="number" id="eventLatitude" name="quantity" min="-90" max="90">
+			<label for="eventLongitude"> Longitude</label>
+			<input type="number" id="eventLongitude" name="quantity" min="-180" max="180">
+		</div>
+		<div class="form-group">
+			<label for="eventName">Name</label>
+			<input id="eventName" type="text"/ maxlength="255" pattern="/^[A-Za-z0-9]+$/">
+		</div>
+		<div class="form-group">
+			<label for="eventDescription">Description</label>
+			<input id="eventDescription" type="text"/>
+		</div>
+		<div class="form-group">
+			<label for="eventPrivate">Private?</label>
+			<input id="eventPrivate" type="checkbox" value="Make an event private?"/>
+		</div>
+		<div class="form-group">
+			<label for="eventDate">Date of event</label>
+			<input id="eventDate" type="date"/>
+		</div>
+		<button type="submit" class="btn btn-default">Submit</button>
+	</form>
+</div>

@@ -1,0 +1,36 @@
+@import '../public/libs/bootstrap-sass-official/assets/stylesheets/bootstrap';
+
+
+* {
+	margin: 0;
+	padding: 0
+}
+
+html, 
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: black;
+	color: white;
+}
+
+form {
+	.add-event{
+		width: 40%;
+	}
+	padding: 5px;
+	margin: 20px;
+	background-color: yellow;
+	color: black;
+	.form-group{
+		padding-left: 10px;
+		margin: 2px; 
+	}
+}
+
+label {
+	padding-right: 5px; 
+}
