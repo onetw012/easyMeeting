@@ -1,26 +1,27 @@
+<!-- <div ng-controller="AddEventController"> -->
 <div>
-	<form class="form-horizontal add-event">
+	<form name="eventForm" ng-submit="submitForm()" class="form-horizontal add-event">
 		<div class="form-group">
 			<label for="eventLatitude">Latitude</label>
-			<input type="number" id="eventLatitude" name="quantity" min="-90" max="90">
+			<input type="number" id="eventLatitude" ng-model="event.latitude" name="quantity" min="-90" max="90" required disabled/>
 			<label for="eventLongitude"> Longitude</label>
-			<input type="number" id="eventLongitude" name="quantity" min="-180" max="180">
+			<input type="number" id="eventLongitude" ng-model="event.longitude" name="quantity" min="-180" max="180" required disabled/>
 		</div>
 		<div class="form-group">
-			<label for="eventName">{{event.name}}</label>
-			<input id="eventName" type="text"/ maxlength="255" ng-model="event.name" pattern="/^[A-Za-z0-9]+$/">
+			<label for="eventName">Event name</label>
+			<input id="eventName" type="text"/ maxlength="255" ng-model="event.name" pattern="^[A-Za-z0-9 ]+$" required/>
 		</div>
 		<div class="form-group">
 			<label for="eventDescription">Description</label>
-			<input id="eventDescription" type="text"/>
+			<textarea rows="5" cols="22" id="eventDescription" ng-model="event.desc" ></textarea>
 		</div>
 		<div class="form-group">
 			<label for="eventPrivate">Private?</label>
-			<input id="eventPrivate" type="checkbox" value="Make an event private?"/>
+			<input id="eventPrivate" ng-model="event.private" type="checkbox" value="Make an event private?"/>
 		</div>
 		<div class="form-group">
 			<label for="eventDate">Date of event</label>
-			<input id="eventDate" type="date"/>
+			<input id="eventDate" ng-model="event.dateOfEvent" type="datetime-local" required/>
 		</div>
 		<button type="submit" class="btn btn-default">Submit</button>
 	</form>

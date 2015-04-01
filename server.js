@@ -1,5 +1,5 @@
 // server.js
-
+"use strict";
 // modules ====================================
 var express = require('express'),
 	app = express(),
@@ -26,12 +26,14 @@ mongoose.connect(uristring, function () {
 
 // middleware =================================
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public')); 
 
 
 //routes ======================================
 require('./app/routes')(app); // configure our routes
+
 
 // make server=================================
 app.listen(port, function () {

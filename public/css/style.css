@@ -5645,19 +5645,30 @@ body {
   height: 100%; }
 
 body {
-  background-color: black;
-  color: white; }
+  background: transparent url("../img/bg.jpg") center top no-repeat;
+  background-size: cover;
+  overflow: hidden; }
 
-form {
+.add-event {
   padding: 5px;
   margin: 20px;
-  background-color: yellow;
+  background-color: #AAAAAA;
   color: black; }
-  form .add-event {
-    width: 40%; }
-  form .form-group {
+  .add-event .form-group {
     padding-left: 10px;
     margin: 2px; }
+  .add-event label {
+    padding-right: 5px; }
 
-label {
-  padding-right: 5px; }
+.angular-google-map-container {
+  height: 80%;
+  margin: 5px;
+  border: 2px solid #ffee33; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #EEFFFF;
+  height: 5%;
+  border-top: 1px solid #ddd; }

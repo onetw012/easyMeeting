@@ -4,8 +4,8 @@ var mongoose = require('mongoose'),
 	ObjectId = mongoose.Schema.ObjectId;
 
 
-var EventSchema = new mongoose.Schema({
-  coords: {lat: Number, lng: Number},
+var EventsSchema = new mongoose.Schema({
+  coords: {latitude: Number, longitude: Number},
   name: String,
   description: String,
   participants:[{type: ObjectId, ref: 'userSchema'}],
@@ -15,4 +15,4 @@ var EventSchema = new mongoose.Schema({
   dateOfCreation: Date
 });
 
-module.exports.getEvent = mongoose.model('events', EventSchema);
+module.exports.getEvent = mongoose.model('events', EventsSchema);
