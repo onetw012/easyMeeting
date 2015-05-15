@@ -27,6 +27,15 @@
 
 		var userMarker = new Marker (0, 0, "1");
 
+
+
+
+		this.closeClick = function() {
+		    this.windowOptions.visible = false;
+		};
+
+
+
 		this.update = function () {
 			$timeout(function() {$rootScope.$broadcast('update', vm.markers[0]);});
 		};

@@ -12,6 +12,7 @@
 
 		$scope.$on('update', function(event, coords) {		
 			$scope.markers = Map.markers;
+			/*console.log($scope.markers);*/
 		  });
 
 	}]);

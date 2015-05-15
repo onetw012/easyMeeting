@@ -5663,7 +5663,7 @@ body {
 .angular-google-map-container {
   height: 80%;
   margin: 5px;
-  border: 2px solid #ffee33; }
+  border: 2px solid white; }
 
 footer {
   position: absolute;
